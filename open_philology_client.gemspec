@@ -6,10 +6,10 @@ require 'open_philology_client/version'
 Gem::Specification.new do |spec|
   spec.name          = "open_philology_client"
   spec.version       = OpenPhilologyClient::VERSION
-  spec.authors       = ["christof"]
-  spec.email         = ["sirchb01@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.authors       = ["Christof Sirk, Gernot Höflechner, Robert Lichtensteiner"]
+  spec.email         = ["latin.language.toolkit@gmail.com"]
+  spec.description   = %q{Client for the APIs of open philology projects like perseus and perseids}
+  spec.summary       = %q{Client for the APIs of open philology projects like perseus and perseids}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "nestful", "~> 1.0"
+
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_development_dependency "rspec"
 end
