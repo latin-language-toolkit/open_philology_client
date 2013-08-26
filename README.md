@@ -1,6 +1,7 @@
 # OpenPhilologyClient
+[![Build Status](https://travis-ci.org/[Christof]/[open_philology_client].png)](https://travis-ci.org/[Christof]/[open_philology_client])
 
-TODO: Write a gem description
+Client for the APIs of open philology projects like Perseus and Perseids.
 
 ## Installation
 
