@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenPhilologyClient::Morphology do
+describe OpenPhilologyClient::Morphology, :vcr do
   describe "#get" do
     it "gets a response" do
       subject.get("homo").should_not be_nil
