@@ -10,7 +10,9 @@ module OpenPhilologyClient
     def analyse_word(word)
       verbose = get_verbose(word)
       body = verbose.body
-      parsed_inner_body = parse_json(body)["RDF"]["Annotation"]["Body"]
+      parsed_body = JSON.parse(body)
+      parsed_inner_body = parsed_body["RDF"]["Annotation"]["Body"]
+      return nil if parsed_inner_body == nil
 
       if parsed_inner_body.is_a? Array
         parsed_inner_body.map { |element| get_entry(element) }
