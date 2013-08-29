@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://sosol.perseus.tufts.edu/bsp/morphologyservice/analysis/word?engine=morpheus&lang=lat&word=homo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 29 Aug 2013 15:36:19 GMT
+      Server:
+      - Jetty(7.4.1.v20110513)
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Length:
+      - '940'
+      Via:
+      - 1.1 shelltst.perseus.tufts.edu
+    body:
+      encoding: UTF-8
+      string: '{"RDF":{"Annotation":{"about":"urn:TuftsMorphologyService:homo:morpheus","hasTarget":{"Description":{"about":"urn:word:homo"}},"hasBody":{"resource":"urn:uuid:17025f2c-6667-44d5-b5d8-b56210fe3373"},"title":null,"creator":{"Agent":{"about":"org.perseus:tools:morpheus.v1"}},"created":"29\nAug\n2013\n15:36:19\nGMT","Body":{"about":"urn:uuid:17025f2c-6667-44d5-b5d8-b56210fe3373","type":{"resource":"cnt:ContentAsXML"},"rest":{"entry":{"uri":null,"dict":{"hdwd":{"lang":"lat","$":"homo"},"pofs":{"order":3,"$":"noun"},"decl":"3rd","gend":"masculine\/feminine"},"infl":[{"term":{"lang":"lat","stem":"hom","suff":"o_"},"pofs":{"order":3,"$":"noun"},"decl":"3rd","case":{"order":7,"$":"nominative"},"gend":"masculine","num":"singular","stemtype":"o_inis"},{"term":{"lang":"lat","stem":"hom","suff":"o_"},"pofs":{"order":3,"$":"noun"},"decl":"3rd","case":{"order":7,"$":"nominative"},"gend":"feminine","num":"singular","stemtype":"o_inis"}]}}}}}}'
+    http_version: 
+  recorded_at: Thu, 29 Aug 2013 15:38:08 GMT
+recorded_with: VCR 2.5.0

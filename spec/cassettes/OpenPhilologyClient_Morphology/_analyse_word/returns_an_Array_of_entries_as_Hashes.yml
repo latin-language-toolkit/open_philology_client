@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://sosol.perseus.tufts.edu/bsp/morphologyservice/analysis/word?engine=morpheus&lang=lat&word=multa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 29 Aug 2013 15:36:19 GMT
+      Server:
+      - Jetty(7.4.1.v20110513)
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Length:
+      - '3874'
+      Via:
+      - 1.1 shelltst.perseus.tufts.edu
+    body:
+      encoding: UTF-8
+      string: '{"RDF":{"Annotation":{"about":"urn:TuftsMorphologyService:multa:morpheus","hasTarget":{"Description":{"about":"urn:word:multa"}},"hasBody":[{"resource":"urn:uuid:86ca9250-cbe9-49fc-b2b5-833dc3fb4283"},{"resource":"urn:uuid:eba64956-06ef-48c3-b09e-2fc78c151686"},{"resource":"urn:uuid:4f6cd563-5f2d-4ce5-9e43-01689aff9587"},{"resource":"urn:uuid:b165c562-d2a9-4390-bcf2-8404fbbb8323"}],"title":null,"creator":{"Agent":{"about":"org.perseus:tools:morpheus.v1"}},"created":"29\nAug\n2013\n15:36:15\nGMT","Body":[{"about":"urn:uuid:86ca9250-cbe9-49fc-b2b5-833dc3fb4283","type":{"resource":"cnt:ContentAsXML"},"rest":{"entry":{"uri":null,"dict":{"hdwd":{"lang":"lat","$":"multa1"},"pofs":{"order":3,"$":"noun"},"decl":"1st","gend":"feminine"},"infl":[{"term":{"lang":"lat","stem":"mult","suff":"a_"},"pofs":{"order":3,"$":"noun"},"decl":"1st","case":{"order":3,"$":"ablative"},"gend":"feminine","num":"singular","stemtype":"a_ae"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":3,"$":"noun"},"decl":"1st","case":{"order":7,"$":"nominative"},"gend":"feminine","num":"singular","stemtype":"a_ae"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":3,"$":"noun"},"decl":"1st","case":{"order":1,"$":"vocative"},"gend":"feminine","num":"singular","stemtype":"a_ae"}]}}},{"about":"urn:uuid:eba64956-06ef-48c3-b09e-2fc78c151686","type":{"resource":"cnt:ContentAsXML"},"rest":{"entry":{"uri":null,"dict":{"hdwd":{"lang":"lat","$":"multus"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd"},"infl":[{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd","case":{"order":7,"$":"nominative"},"gend":"neuter","num":"plural","stemtype":"us_a_um"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd","case":{"order":1,"$":"vocative"},"gend":"neuter","num":"plural","stemtype":"us_a_um"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd","case":{"order":4,"$":"accusative"},"gend":"neuter","num":"plural","stemtype":"us_a_um"},{"term":{"lang":"lat","stem":"mult","suff":"a_"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd","case":{"order":3,"$":"ablative"},"gend":"feminine","num":"singular","stemtype":"us_a_um"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd","case":{"order":7,"$":"nominative"},"gend":"feminine","num":"singular","stemtype":"us_a_um"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":2,"$":"adjective"},"decl":"1st\n&\n2nd","case":{"order":1,"$":"vocative"},"gend":"feminine","num":"singular","stemtype":"us_a_um"}]}}},{"about":"urn:uuid:4f6cd563-5f2d-4ce5-9e43-01689aff9587","type":{"resource":"cnt:ContentAsXML"},"rest":{"entry":{"uri":null,"dict":{"hdwd":{"lang":"lat","$":"multo2"},"pofs":{"order":1,"$":"verb"}},"infl":{"term":{"lang":"lat","stem":"mult","suff":"a_"},"pofs":{"order":1,"$":"verb"},"mood":"imperative","num":"singular","pers":"2nd","tense":"present","voice":"active","stemtype":"conj1","derivtype":"are_vb"}}}},{"about":"urn:uuid:b165c562-d2a9-4390-bcf2-8404fbbb8323","type":{"resource":"cnt:ContentAsXML"},"rest":{"entry":{"uri":null,"dict":{"hdwd":{"lang":"lat","$":"multa"},"pofs":{"order":3,"$":"noun"},"decl":"2nd","gend":"neuter"},"infl":[{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":3,"$":"noun"},"decl":"2nd","case":{"order":7,"$":"nominative"},"gend":"neuter","num":"plural","stemtype":"us_i"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":3,"$":"noun"},"decl":"2nd","case":{"order":1,"$":"vocative"},"gend":"neuter","num":"plural","stemtype":"us_i"},{"term":{"lang":"lat","stem":"mult","suff":"a"},"pofs":{"order":3,"$":"noun"},"decl":"2nd","case":{"order":4,"$":"accusative"},"gend":"neuter","num":"plural","stemtype":"us_i"}]}}}]}}}'
+    http_version: 
+  recorded_at: Thu, 29 Aug 2013 15:38:07 GMT
+recorded_with: VCR 2.5.0

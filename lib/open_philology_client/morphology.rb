@@ -3,11 +3,11 @@ require "json"
 
 module OpenPhilologyClient
   class Morphology
-    def initialize
-      @endpoint = Nestful::Endpoint.new('http://sosol.perseus.tufts.edu/bsp/morphologyservice/analysis/word')
+    def initialize(base_url = 'http://sosol.perseus.tufts.edu')
+      @endpoint = Nestful::Endpoint.new("#{base_url}/bsp/morphologyservice/")
     end
 
-    def get(word)
+    def analyse_word(word)
       verbose = get_verbose(word)
       body = verbose.body
       parsed_inner_body = parse_json(body)["RDF"]["Annotation"]["Body"]
@@ -26,8 +26,9 @@ module OpenPhilologyClient
     end
 
     def get_verbose(word)
-      @endpoint.get({"word" => word, "lang" => "lat", "engine" => "morpheus"},
-                    {"headers" => {"accept" => "application/json"}})
+      @endpoint['analysis']['word'].get(
+        {"word" => word, "lang" => "lat", "engine" => "morpheus"},
+        {"headers" => {"accept" => "application/json"}})
     end
 
     def parse_json(json)
