@@ -18,8 +18,17 @@ Or install it yourself as:
     $ gem install open_philology_client
 
 ## Usage
-
-TODO: Write usage instructions here
+### Morphology
+```ruby
+morphology = OpenPhilologyClient::Morphology.new
+morphology.analyse_word("latin_word_to_analyse")
+```
+To provide a custom base url use:
+```ruby
+morphology = OpenPhilologyClient::Morphology.new('base url')
+```
+The return value of `analyse_word` is a nested dictionary.
+If the word is not found `nil` is returned.
 
 ## Contributing
 
