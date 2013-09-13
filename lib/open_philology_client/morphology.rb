@@ -32,9 +32,5 @@ module OpenPhilologyClient
         {"word" => word, "lang" => "lat", "engine" => "morpheus"},
         {"headers" => {"accept" => "application/json"}})
     end
-
-    def parse_json(json)
-      JSON.parse(json)
-    end
   end
 end
