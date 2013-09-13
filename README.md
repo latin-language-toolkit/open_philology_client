@@ -1,6 +1,7 @@
 # OpenPhilologyClient
 [![Build Status](https://travis-ci.org/Christof/open_philology_client.png)](https://travis-ci.org/Christof/open_philology_client)
 [![Coverage Status](https://coveralls.io/repos/Christof/open_philology_client/badge.png)](https://coveralls.io/r/Christof/open_philology_client)
+[![Dependency Status](https://gemnasium.com/Christof/open_philology_client.png)](https://gemnasium.com/Christof/open_philology_client)
 
 Client for the APIs of open philology projects like Perseus and Perseids.
 
