@@ -32,6 +32,9 @@ morphology = OpenPhilologyClient::Morphology.new('base url')
 The return value of `analyse_word` is a nested dictionary.
 If the word is not found `nil` is returned.
 
+The documentation for the morphological analysis service can be found
+[here](https://wikihub.berkeley.edu/display/pbamboo/Morphological+Analysis+Service+Contract+Description+-+v1.1.1).
+
 ## Contributing
 
 1. Fork it
